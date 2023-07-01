@@ -1,0 +1,301 @@
+@import url(https://fonts.googleapis.com/css2?family=Alata&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap);
+
+/* font-family: 'Josefin Sans', sans-serif; */
+
+/* font-family: 'Alata', sans-serif; main */
+
+:root {
+  --main-font-family: "Alata", sans-serif;
+  --secondary-font-family: "Josefin Sans", sans-serif;
+  --back-color: #000000;
+  --white-color: #ffffff;
+}
+
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  font-family: var(--main-font-family);
+  color: var(--back-color);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* HEADER */
+
+/* MAIN */
+main {
+  flex-grow: 1;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.4) 100%),
+    url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 8rem;
+  background-size: cover;
+  background-position: center;
+}
+.header-container {
+  padding-bottom: 14.6rem;
+  padding-top: 6.4rem;
+}
+.container {
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13rem;
+}
+.header-logo {
+  display: block;
+  margin-right: auto;
+}
+.sitenav {
+}
+
+.sitenav__list {
+  display: flex;
+  gap: 3.2rem;
+}
+.sitenav__item {
+}
+.sitenav__link {
+  color: var(--white-color);
+  position: relative;
+}
+.sitenav__link::before {
+  content: "";
+  transition: 0.3s;
+  background: #fff;
+  position: absolute;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sitenav__item:hover .sitenav__link::before {
+  width: 2.5rem;
+}
+
+.sitenav__item {
+}
+.sitenav__link {
+  color: var(--white-color);
+}
+
+.header-top__nav-icon {
+}
+.header-text {
+  max-width: 650px;
+  padding: 4rem;
+  width: 100%;
+  border: 2px solid var(--white-color);
+}
+.header--text__title {
+  font-size: 7.2rem;
+  text-align: left;
+  font-family: var(--secondary-font-family);
+  font-weight: 300;
+  color: var(--white-color);
+  text-transform: uppercase;
+  line-height: 0.97;
+}
+
+.interactive__vr {
+  padding-top: 8rem;
+  margin-bottom: 9.2rem;
+}
+.interactive__vr--container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.interactive__vr--img {
+}
+.interactive__vr--text {
+  width: 100%;
+  background: var(--white-color);
+
+  max-width: 100%;
+  padding-top: 9.6rem;
+  padding-left: 9.6rem;
+  margin-left: -15.6rem;
+}
+.interactive__vr--title {
+  font-size: 4.8rem;
+  line-height: 1;
+  font-family: var(--secondary-font-family);
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+.interactive__vr--discription {
+  color: gray;
+}
+
+/* creations */
+
+.creations {
+  margin-bottom: 11.5rem;
+}
+.creation__container {
+}
+.container {
+}
+.creation__text--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
+  padding-top: 10.4rem;
+}
+.creation__title {
+  color: #000;
+  font-size: 4.8rem;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+}
+
+.creation__btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.creation__btn {
+  transition: 0.3s;
+  color: #000;
+  font-size: 1.4rem;
+  font-family: Alata;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 1.3rem 4.3rem 1.3rem 3.8rem;
+  border: 1px solid #000;
+}
+.creation-bg-wrapper {
+}
+.creation-first-wrapper {
+  margin-bottom: 2.5rem;
+  gap: 3rem;
+  display: flex;
+  position: relative;
+}
+.creations__link {
+}
+.creations__title {
+  color: #fff;
+  font-size: 3.2rem;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 35.4rem;
+  padding-left: 4rem;
+}
+.creation-second-wrapper {
+  gap: 3rem;
+  display: flex;
+  position: relative;
+}
+
+.creation-img-wr {
+  /* position: relative; */
+}
+
+.footer {
+  background: #000;
+}
+.footer__container {
+  padding: 5rem 0;
+  margin-top: 20rem;
+}
+.container {
+}
+.footer__logo--wrapper {
+  justify-content: space-between;
+  display: flex;
+}
+.footer__logo {
+}
+.socials {
+  display: flex;
+}
+.social__img {
+}
+.sitenav__link {
+}
+
+/* footer */
+
+.sitenav {
+}
+.sitenav__list {
+}
+.sitenav__item {
+}
+.sitenav__link {
+}
+.p-wr {
+}
+.footer-desc {
+  color: gray;
+  font-size: 0.9375rem;
+  font-family: Alata;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem;
+}
+
+.footer-bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
